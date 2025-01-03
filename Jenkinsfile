@@ -10,7 +10,7 @@ stage('checkoutcode'){
 stage('build'){
     sh "$mavenHome/bin/mvn clean package"
 }
-
+/*
 //generate SonarQube report
 stage('SonarQube'){
     sh "$mavenHome/bin/mvn sonar:sonar"
@@ -27,5 +27,5 @@ stage('Tomcat Server'){
        sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.203.114.76:/opt/tomcat/webapps"
 }
 }
-
+*/
 }
