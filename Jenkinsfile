@@ -9,6 +9,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
 def mavenHome = tool name: "maven-3.9.9"
 //checkout stage   
 stage('checkoutcode'){
+ buildName 'Gnaswa - ${env.BUILD_NAME}'
     git credentialsId: 'Github_Credentials', url: 'https://github.com/Swaroop17y/maven-web-application.git'
 }
 
