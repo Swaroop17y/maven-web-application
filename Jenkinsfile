@@ -1,8 +1,8 @@
 node{
 
-echo "The Node name is: ${env.NODE_NAME}"
-echo "The Job name is: ${env.JOB_NAME}"
-echo "The Build number is: ${env.BUILD_NUMBER}"
+echo "The Node name is: ${NODE_NAME}"
+echo "The Job name is: ${JOB_NAME}"
+echo "The Build number is: ${BUILD_NUMBER}"
 
  properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([pollSCM('* * * * *')])])
  
