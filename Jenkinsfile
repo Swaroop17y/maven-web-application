@@ -1,6 +1,6 @@
 node{
 
-buildName 'Gnaswa - ${BUILD_NIMBER}'
+buildName 'PROD - ${BUILD_NIMBER}'
 buildDescription 'Pipeline Script - Scriptedway'
 
 
